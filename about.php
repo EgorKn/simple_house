@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simple House - About Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-    <link href="css/all.min.css" rel="stylesheet" />
-	<link href="css/templatemo-style.css" rel="stylesheet" />
-</head>
+<?php
+	require 'partials/header.php'
+?>
 
 <body> 
 
 	<?php
-		require 'partials/header.php'
+		require 'partials/menu.php'
 	?>
 
 		<main>
@@ -142,11 +136,9 @@
 			</div>
 		</main>
 
-		<footer class="tm-footer text-center">
-			<p>Copyright &copy; 2020 Simple House 
-            
-            | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
-		</footer>
+		<?php
+			require 'partials/footer.php'
+		?>
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/parallax.min.js"></script>

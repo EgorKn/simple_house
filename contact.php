@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simple House - Contact Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-    <link href="css/all.min.css" rel="stylesheet" />
-	<link href="css/templatemo-style.css" rel="stylesheet" />
-</head>
-
+<?php
+	require 'partials/header.php'
+?>
 <body> 
 
 	<?php
-		require 'partials/header.php'
+		require 'partials/menu.php'
 	?>
 
 		<main>
@@ -68,12 +61,6 @@
 				</div>
 			</div>
             
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
 			<div class="tm-container-inner-2 tm-map-section">
 				<div class="row">
 					<div class="col-12">
