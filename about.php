@@ -29,11 +29,6 @@
 								<p class="tm-person-about">Vivamus cursus leo nec sem feugiat sagittis.
 								Duis ut feugiat odio, sit amet accumsan
 								odio.</p>
-								<div>
-									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
-									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
-								</div>
 							</figcaption>
 						</figure>
 					</article>
@@ -45,10 +40,6 @@
 								<p class="tm-person-title">Executive Chef</p>
 								<p class="tm-person-about">Praesent non vulputate elit. Orci varius
 								natoque et magnis dis parturient, nascetur ridiculus mus.</p>
-								<div>
-									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
-								</div>
 							</figcaption>
 						</figure>
 					</article>
@@ -60,10 +51,6 @@
 								<p class="tm-person-title">Kitchen Manager</p>
 								<p class="tm-person-about">Aenean sapien sem, ultricies sed vulputate
 								et, auctor vel mauris. Integer sit amet diam eget est facilisis lacinia vitae.</p>
-								<div>
-									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
-								</div>
 							</figcaption>
 						</figure>
 					</article>
@@ -75,12 +62,6 @@
 								<p class="tm-person-title">Culinary Director</p>
 								<p class="tm-person-about">Praesent non vulputate elit. Orci varius
 								natoque penatibus et magnis montes, nascetur ridiculus mus.</p>
-								<div>
-									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
-									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
-									<a href="https://youtube.com" class="tm-social-link"><i class="fab fa-youtube tm-social-icon"></i></a>
-								</div>
 							</figcaption>
 						</figure>
 					</article>
