@@ -1,6 +1,4 @@
 <div class="container">
-<!-- Top box -->
-    <!-- Logo & Site Name -->
     <div class="placeholder">
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
             <div class="tm-header">

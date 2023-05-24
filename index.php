@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <?php
-	require 'partials/header.php'
+include 'partials/header.php';
+require_once 'inc/Portfolio.php';
+$portfolio = new Portfolio();
 ?>
 <body> 
 
 	<?php
-		require 'partials/menu.php'
+	include 'partials/menu.php';
 	?>
 
 		<main>
@@ -19,86 +21,21 @@
 			<!-- Gallery -->
 			<div class="row tm-gallery">
 				<div id="tm-gallery-page-pizza" class="tm-gallery-page">
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Fusce dictum finibus</h4>
-								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-								<p class="tm-gallery-price">$45 / $55</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Aliquam sagittis</h4>
-								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-								<p class="tm-gallery-price">$65 / $70</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Sed varius turpis</h4>
-								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-								<p class="tm-gallery-price">$30.50</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Aliquam sagittis</h4>
-								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-								<p class="tm-gallery-price">$25.50</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Maecenas eget justo</h4>
-								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-								<p class="tm-gallery-price">$80.25</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Quisque et felis eros</h4>
-								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-								<p class="tm-gallery-price">$20 / $40 / $60</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Sed ultricies dui</h4>
-								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-								<p class="tm-gallery-price">$94</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Donec porta consequat</h4>
-								<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-								<p class="tm-gallery-price">$15</p>
-							</figcaption>
-						</figure>
-					</article>
+          <?php
+          $portfolio_items = $portfolio->get_portfolio();
+          foreach ($portfolio_items as $item) {
+            echo '<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">';
+            echo '<figure>';
+            echo '<img src="'.$item->image.'" alt="Image" class="img-fluid tm-gallery-img" />';
+            echo '<figcaption>';
+            echo '<h4 class="tm-gallery-title">'.$item->name.'</h4>';
+            echo '<p class="tm-gallery-description">'.$item->description.'</p>';
+            echo '<p class="tm-gallery-price">'.$item->cost.'€</p>';
+            echo '</figcaption>';
+            echo '</figure>';
+            echo '</article>';
+          }
+          ?>
 				</div> 
 				
 			</div>
@@ -121,7 +58,7 @@
 		</main>
 
 		<?php
-			require 'partials/footer.php'
+		include 'partials/footer.php';
 		?>
 	</div>
 	<script src="js/jquery.min.js"></script>
