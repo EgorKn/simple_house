@@ -10,13 +10,7 @@
     <link href="css/all.min.css" rel="stylesheet" />
 	<link href="css/templatemo-style.css" rel="stylesheet" />
 </head>
-<!--
 
-Simple House
-
-https://templatemo.com/tm-539-simple-house
-
--->
 <body> 
 
 	<div class="container">
@@ -96,12 +90,6 @@ https://templatemo.com/tm-539-simple-house
 				</div>
 			</div>
             
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
 			<div class="tm-container-inner-2 tm-map-section">
 				<div class="row">
 					<div class="col-12">
