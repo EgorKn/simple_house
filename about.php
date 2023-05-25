@@ -1,43 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simple House - About Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-    <link href="css/all.min.css" rel="stylesheet" />
-	<link href="css/templatemo-style.css" rel="stylesheet" />
-</head>
+<?php require'partials/header.php'?>
 
 <body> 
 
 	<div class="container">
 	<!-- Top box -->
 		<!-- Logo & Site Name -->
-		<div class="placeholder">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
-				<div class="tm-header">
-					<div class="row tm-header-inner">
-						<div class="col-md-6 col-12">
-							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
-							<div class="tm-site-text-box">
-								<h1 class="tm-site-title">Simple House</h1>
-								<h6 class="tm-site-description">new restaurant template</h6>	
-							</div>
-						</div>
-						<nav class="col-md-6 col-12 tm-nav">
-							<ul class="tm-nav-ul">
-								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
-								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link active">About</a></li>
-								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
-							</ul>
-						</nav>	
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php require'partials/menu.php'?>
 
 		<main>
 			<header class="row tm-welcome-section">
@@ -48,51 +19,7 @@
 
 			<div class="tm-container-inner tm-persons">
 				<div class="row">
-					<article class="col-lg-6">
-						<figure class="tm-person">
-							<img src="img/about-01.jpg" alt="Image" class="img-fluid tm-person-img" />
-							<figcaption class="tm-person-description">
-								<h4 class="tm-person-name">Jennifer Soft</h4>
-								<p class="tm-person-title">Founder and CEO</p>
-								<p class="tm-person-about">Vivamus cursus leo nec sem feugiat sagittis.
-								Duis ut feugiat odio, sit amet accumsan
-								odio.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-6">
-						<figure class="tm-person">
-							<img src="img/about-02.jpg" alt="Image" class="img-fluid tm-person-img" />
-							<figcaption class="tm-person-description">
-								<h4 class="tm-person-name">Daisy Walker</h4>
-								<p class="tm-person-title">Executive Chef</p>
-								<p class="tm-person-about">Praesent non vulputate elit. Orci varius
-								natoque et magnis dis parturient, nascetur ridiculus mus.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-6">
-						<figure class="tm-person">
-							<img src="img/about-03.jpg" alt="Image" class="img-fluid tm-person-img" />
-							<figcaption class="tm-person-description">
-								<h4 class="tm-person-name">Florence Nelson</h4>
-								<p class="tm-person-title">Kitchen Manager</p>
-								<p class="tm-person-about">Aenean sapien sem, ultricies sed vulputate
-								et, auctor vel mauris. Integer sit amet diam eget est facilisis lacinia vitae.</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-6">
-						<figure class="tm-person">
-							<img src="img/about-04.jpg" alt="Image" class="img-fluid tm-person-img" />
-							<figcaption class="tm-person-description">
-								<h4 class="tm-person-name">Valentina Martin</h4>
-								<p class="tm-person-title">Culinary Director</p>
-								<p class="tm-person-about">Praesent non vulputate elit. Orci varius
-								natoque penatibus et magnis montes, nascetur ridiculus mus.</p>
-							</figcaption>
-						</figure>
-					</article>
+					<?php require 'partials/employees.php'; ?>
 				</div>
 			</div>
 			<div class="tm-container-inner tm-featured-image">
@@ -145,11 +72,7 @@
 			</div>
 		</main>
 
-		<footer class="tm-footer text-center">
-			<p>Copyright &copy; 2020 Simple House 
-            
-            | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
-		</footer>
+		<?php require'partials/footer.php'?>
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/parallax.min.js"></script>
