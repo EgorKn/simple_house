@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header('Location: inc/login.php');
+    exit;
+}
+
 $host = 'localhost';
 $db = 'test';
 $user = 'root';
@@ -53,7 +61,7 @@ if (isset($_POST['delete-menu'])) {
     $stmt = $pdo->prepare("DELETE FROM menu WHERE id = ?");
     $stmt->execute([$id]);
 
-    echo "Dish added!";
+    echo "Dish deleted!";
 }
 
 if (isset($_POST['delete-employee'])) {
